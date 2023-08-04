@@ -1,24 +1,3 @@
-const data = {
-    labels: [
-      'Red',
-      'Blue',
-      'Yellow'
-    ],
-    datasets: [{
-      label: 'My First Dataset',
-      data: [300, 50, 100],
-      backgroundColor: [
-        'rgb(255, 99, 132)',
-        'rgb(54, 162, 235)',
-        'rgb(255, 205, 86)'
-      ],
-      hoverOffset: 4
-    }]
-  };
-const config = {
-    type: 'pie',
-    data: data,
-  };
 JSC.Chart('chartDiv', {
     type: 'pie',
         debug: true,
@@ -39,10 +18,10 @@ JSC.Chart('chartDiv', {
           'Auto Hide': { type: 'checkbox', events_change: setAutoHide }
         },
         title_label_text: 'time distribution',
-        yAxis: { label_text: 'GDP', formatString: 'n' },
+        yAxis: { label_text: 'min(s)', formatString: 'n' },
         series: [
           {
-            name: 'Countries',
+            name: 'Workout',
             points: [
               { name: 'Warm up', y: 5 },
               { name: 'Training', y: 30 },
